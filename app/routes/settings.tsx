@@ -9,12 +9,12 @@ import { Outlet } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "MedicApp - Configuración" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
 
-function CheckboxComponent ({message}) {
+function CheckboxComponent ({message}: {message: string}) {
     return (
         <div className="m-auto px-2 flex">
             <input type="checkbox" className="text-gray-800 mx-1" name="recibir-notificaciones"/> <p className="text-gray-800 mx-1">{message}</p>

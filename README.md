@@ -1,40 +1,27 @@
-# Welcome to Remix!
+# Tarea 8 DIU
 
-- 📖 [Remix docs](https://remix.run/docs)
+Este es un proyecto construido para ser el MVP del proyecto de interfaces de usuario. Está construido sobre Remix usando React como framework de frontend.
 
-## Development
+## Correr proyecto en modo desarrollo
 
-Run the dev server:
+Correr el servidor de desarrollo
 
 ```shellscript
 npm run dev
 ```
 
-## Deployment
+## Construir versión de producción
 
-First, build your app for production:
+Construir la aplicación de producción
 
 ```sh
 npm run build
 ```
 
-Then run the app in production mode:
+Correrlo en producción
 
 ```sh
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+Luego deberas elegir un host para hacer deploy.

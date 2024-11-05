@@ -55,9 +55,7 @@ export default function Index() {
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-lg font-semibold">Actividad Reciente</h2>
-                <Link to="/medical" className="text-blue-600 text-sm hover:underline">
-                  Ver todo
-                </Link>
+
               </div>
               <div className="space-y-4">
                 <div className="border-l-4 border-green-500 pl-4">
@@ -79,9 +77,7 @@ export default function Index() {
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-lg font-semibold">Próximos eventos</h2>
-                <Link to="/calendar" className="text-blue-600 text-sm hover:underline">
-                  Ver calendario
-                </Link>
+
               </div>
               <div className="space-y-4">
                 <div className="flex items-center justify-between p-3 bg-blue-50 rounded">
@@ -108,9 +104,6 @@ export default function Index() {
             <div className="col-span-2 bg-white p-6 rounded-lg shadow-sm">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-lg font-semibold">Evolución reciente</h2>
-                <Link to="/evolution" className="text-blue-600 text-sm hover:underline">
-                  Ver detalles
-                </Link>
               </div>
               <LineChart
                 xAxis={[{ data: xLabels }]}

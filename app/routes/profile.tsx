@@ -4,6 +4,7 @@ import BigTitle from "../components/BigTitle";
 import { BarChart } from '@mui/x-charts/BarChart';
 import { LineChart } from '@mui/x-charts/LineChart';
 import { PieChart } from '@mui/x-charts/PieChart';
+import { Outlet, useNavigate } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -15,6 +16,7 @@ export const meta: MetaFunction = () => {
 export default function Profile() {
     const weightData = [8, 15, 19, 27, 3, 8, 22, 18, 27, 2, 18, 27];
     const xLabels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+    const navigate = useNavigate();
 
     return (
       <div className="flex h-screen">
@@ -84,7 +86,14 @@ export default function Profile() {
               </div>
             </div>
           </div>
+          <button 
+          onClick={() => navigate(-1)}
+          className="px-4 py-2 text-gray-600 border-2 border-gray-300 rounded-md m-5 hover:bg-gray-100"
+          >
+          Volver
+        </button>
         </div>
+        
       </div>
     );
 }

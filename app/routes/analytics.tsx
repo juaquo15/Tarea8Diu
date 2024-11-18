@@ -2,9 +2,9 @@ import type { MetaFunction } from "@remix-run/node";
 import AsteriskLogo from "../assets/asterisk.svg"
 import Navbar from "../components/Navbar";
 import BigTitle from "../components/BigTitle";
+import { Outlet, useNavigate } from "@remix-run/react";
 
 import { UserCircleIcon, Cog6ToothIcon, PresentationChartBarIcon  } from '@heroicons/react/24/solid'
-import { Outlet } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,6 +14,8 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Analytics() {
+  const navigate = useNavigate();
+
   return (
     <div className="flex h-screen">
       <Navbar/>
@@ -111,7 +113,14 @@ export default function Analytics() {
             </div>
           </div>
         </div>
+        <button 
+          onClick={() => navigate(-1)}
+          className="px-4 py-2 text-gray-600 border-2 border-gray-300 rounded-md m-5 hover:bg-gray-100"
+          >
+          Volver
+        </button>
       </div>
+      
     </div>
   );
 }
